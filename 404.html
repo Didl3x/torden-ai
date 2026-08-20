@@ -5,23 +5,44 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Torden — Page not found</title>
   <meta name="robots" content="noindex">
+  <link rel="icon" href="/favicon.ico" sizes="32x32">
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
   <style>
+    @font-face {
+      font-family: "Hanken Grotesk";
+      src: url("/assets/fonts/hanken-grotesk-var.woff2") format("woff2");
+      font-weight: 100 900;
+      font-style: normal;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: "JetBrains Mono";
+      src: url("/assets/fonts/jetbrains-mono-var.woff2") format("woff2");
+      font-weight: 400 800;
+      font-style: normal;
+      font-display: swap;
+    }
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
       min-height: 100vh;
+      min-height: 100svh;
       display: flex;
       align-items: center;
       justify-content: center;
-      background: linear-gradient(158deg, #0c0e12, #07080b);
+      background:
+        radial-gradient(66% 60% at 16% 18%, #16202b 0%, rgba(22, 32, 43, 0) 62%),
+        radial-gradient(56% 60% at 84% 24%, #2a2015 0%, rgba(42, 32, 21, 0) 60%),
+        radial-gradient(78% 66% at 52% 100%, #101a24 0%, rgba(16, 26, 36, 0) 64%),
+        linear-gradient(158deg, #0c0e12, #07080b);
+      background-color: #07080b;
       color: #f2f3f5;
       font-family: "Hanken Grotesk", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
       text-align: center;
       padding: 24px;
     }
-    p.code { font-family: ui-monospace, Menlo, Consolas, monospace; font-size: 0.75rem; letter-spacing: 0.18em; color: #6b747e; margin-bottom: 18px; }
+    p.code { font-family: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: 0.75rem; letter-spacing: 0.18em; color: #6b747e; margin-bottom: 18px; }
     h1 { font-weight: 600; letter-spacing: -0.03em; font-size: clamp(1.6rem, 4vw, 2.4rem); }
-    a { display: inline-block; margin-top: 28px; color: #f2f3f5; font-family: ui-monospace, Menlo, Consolas, monospace; font-size: 0.78rem; letter-spacing: 0.18em; text-transform: uppercase; text-decoration: none; border: 1px solid rgba(255,255,255,.18); border-radius: 999px; padding: 12px 24px; }
+    a { display: inline-block; margin-top: 28px; color: #f2f3f5; font-family: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: 0.78rem; letter-spacing: 0.18em; text-transform: uppercase; text-decoration: none; border: 1px solid rgba(255,255,255,.18); border-radius: 999px; padding: 12px 24px; }
     a:hover { border-color: #f2f3f5; }
   </style>
 </head>

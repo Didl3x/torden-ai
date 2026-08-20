@@ -16,8 +16,9 @@
   <meta property="og:image" content="https://torden.ai/assets/img/og.jpg">
   <meta name="twitter:card" content="summary_large_image">
 
-  <link rel="icon" href="favicon.svg" type="image/svg+xml">
-  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="icon" href="/favicon.ico" sizes="32x32">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 
   <link rel="preload" href="assets/fonts/hanken-grotesk-var.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="assets/fonts/jetbrains-mono-var.woff2" as="font" type="font/woff2" crossorigin>
@@ -26,7 +27,7 @@
 </head>
 <body>
 
-  <header class="nav" id="top">
+  <header class="nav">
     <div class="container nav-inner">
       <a class="wordmark" href="#top" aria-label="Torden — home">TORDEN</a>
       <nav aria-label="Primary">
@@ -43,7 +44,7 @@
   <main>
 
     <!-- Hero -->
-    <section class="hero">
+    <section class="hero" id="top">
       <div class="hero-media" aria-hidden="true">
         <picture>
           <source type="image/webp" srcset="assets/img/hero-960.webp 960w, assets/img/hero-1600.webp 1600w, assets/img/hero-2560.webp 2560w" sizes="100vw">
@@ -54,10 +55,10 @@
       <div class="container hero-content">
         <p class="hero-kicker">Torden &middot; Trondheim, Norway</p>
         <h1>Enabling hypersonic defence of critical infrastructure.</h1>
-        <p class="hero-sub">We build mass-produced Mach&nbsp;5 ramjet interceptors to kill hypersonic ballistic missiles &mdash; designed for sub-million-dollar rounds instead of today&rsquo;s multi-million-dollar scarcity.</p>
+        <p class="hero-sub">We build mass-produced Mach&nbsp;5 ramjet interceptors to kill hypersonic ballistic missiles. Sub-million a round, instead of today&rsquo;s multi-million-dollar scarcity.</p>
         <div class="hero-cta-row">
           <a class="btn" href="#contact">Get in touch</a>
-          <a class="btn btn-ghost" href="#product">See the interceptor</a>
+          <a class="arrow-link" href="#product">See the interceptor</a>
         </div>
       </div>
       <p class="hero-note" aria-hidden="true">Liquid engine at full thrust<br>on our own test stand</p>
@@ -69,7 +70,7 @@
         <div class="section-head reveal">
           <p class="kicker">01 &mdash; The gap</p>
           <h2>Air defence is out of magazine depth.</h2>
-          <p class="section-lede">According to NATO, less than 5% of the air defence capacity needed is met &mdash; while fielded interceptors cost millions per round and are rationed by years-long lead times. In war or peace, Europe is rearming itself for the next decade. Defending against hypersonic ballistic missiles takes interceptors that exist in numbers that matter.</p>
+          <p class="section-lede">According to NATO, less than 5% of the air defence capacity needed is met. The interceptors that do exist cost millions per round and are rationed by years-long lead times. In war or peace, Europe is rearming itself for the next decade, and defending against hypersonic ballistic missiles takes interceptors that exist in numbers that matter.</p>
         </div>
         <div class="stat-grid">
           <div class="stat reveal">
@@ -97,7 +98,7 @@
         <div class="section-head reveal">
           <p class="kicker">02 &mdash; Product</p>
           <h2>A Mach&nbsp;5 ramjet interceptor, built for magazine depth.</h2>
-          <p class="section-lede">A solid booster gets it to speed. A liquid ramjet keeps it at Mach&nbsp;5 &mdash; so it arrives at the intercept with energy to spend in the turn, where manoeuvring ballistic targets defeat coasting interceptors. Designed from day one for mass production at sub-million-dollar cost per round.</p>
+          <p class="section-lede">A solid booster gets it to speed. A liquid ramjet keeps it at Mach&nbsp;5, so it arrives at the intercept with energy to spend in the turn, where manoeuvring ballistic targets defeat coasting interceptors. Designed from day one for mass production.</p>
         </div>
         <div class="diagram-panel reveal">
           <div class="diagram-scroll" tabindex="0" role="group" aria-label="Interceptor cutaway diagram, scrollable">
@@ -134,12 +135,12 @@
           <div class="feature reveal">
             <p class="feature-index">/ 01</p>
             <h3>Boost, then sustain</h3>
-            <p>A solid commits all its energy at launch. Our ramjet keeps thrusting through the endgame &mdash; we arrive with margin and spend it in the turn.</p>
+            <p>A solid commits all its energy at launch. Our ramjet keeps thrusting through the endgame, so we arrive with margin and spend it in the turn.</p>
           </div>
           <div class="feature reveal">
             <p class="feature-index">/ 02</p>
             <h3>Built to manoeuvre</h3>
-            <p>Sustained Mach&nbsp;5 gives one interceptor the reach and endgame energy of systems many times its price &mdash; against targets that manoeuvre.</p>
+            <p>Sustained Mach&nbsp;5 gives one interceptor the reach and endgame energy of systems many times its price, against targets that manoeuvre.</p>
           </div>
           <div class="feature reveal">
             <p class="feature-index">/ 03</p>
@@ -178,21 +179,21 @@
         </div>
         <div class="launch-grid">
           <figure class="launch-card reveal">
-            <video src="assets/video/fossekall.mp4" poster="assets/video/fossekall-poster.jpg" autoplay muted loop playsinline preload="metadata" aria-label="Fossekall lifting off from a coastal launch rail"></video>
+            <video src="assets/video/fossekall.mp4" poster="assets/video/fossekall-poster.jpg" muted loop playsinline preload="metadata" aria-label="Fossekall lifting off from a coastal launch rail"></video>
             <figcaption>
               <span class="launch-name">Fossekall</span>
               <span class="launch-tag">Liquid &middot; launched</span>
             </figcaption>
           </figure>
           <figure class="launch-card reveal">
-            <video src="assets/video/heimdall.mp4" poster="assets/video/heimdall-poster.jpg" autoplay muted loop playsinline preload="metadata" aria-label="Heimdall igniting on an island pad, seen from a drone"></video>
+            <video src="assets/video/heimdall.mp4" poster="assets/video/heimdall-poster.jpg" muted loop playsinline preload="metadata" aria-label="Heimdall igniting on an island pad, seen from a drone"></video>
             <figcaption>
               <span class="launch-name">Heimdall</span>
               <span class="launch-tag">Liquid &middot; launched</span>
             </figcaption>
           </figure>
           <figure class="launch-card reveal">
-            <video src="assets/video/bifrost.mp4" poster="assets/video/bifrost-poster.jpg" autoplay muted loop playsinline preload="metadata" aria-label="Bifrost leaving its launch tower"></video>
+            <video src="assets/video/bifrost.mp4" poster="assets/video/bifrost-poster.jpg" muted loop playsinline preload="metadata" aria-label="Bifrost leaving its launch tower"></video>
             <figcaption>
               <span class="launch-name">Bifrost</span>
               <span class="launch-tag">Liquid &middot; launched</span>
@@ -246,7 +247,7 @@
             <div class="founder-body">
               <h3>William Dugan</h3>
               <p class="founder-role">Co-founder &amp; CTO</p>
-              <p>Chief Propulsion Engineer at Propulse NTNU for three years &mdash; led three engine development and hotfire campaigns end to end. Previously technical engineer at Fugro. MSc in Physics, NTNU.</p>
+              <p>Chief Propulsion Engineer at Propulse NTNU for three years, where he led three engine development and hotfire campaigns end to end. Previously technical engineer at Fugro. MSc in Physics, NTNU.</p>
               <a class="founder-mail" href="mailto:william@torden.ai">william@torden.ai</a>
             </div>
           </div>
@@ -266,7 +267,8 @@
       <div class="container">
         <div class="reveal">
           <p class="kicker">06 &mdash; Contact</p>
-          <h2 id="contact-title">Building with us, backing us, or buying from us?</h2>
+          <h2 id="contact-title">Talk to the founders.</h2>
+          <p class="section-lede">Investors, partners, engineers: mail lands directly with the two of us.</p>
           <div class="contact-mails">
             <a class="mail-card" href="mailto:adrian@torden.ai">
               <span class="who">Adrian Wilhelmsen &middot; CEO</span>
@@ -337,6 +339,8 @@
           });
         }, { threshold: 0.2 });
         videos.forEach(function (v) { vo.observe(v); });
+      } else {
+        videos.forEach(function (v) { v.play().catch(function () {}); });
       }
     })();
   </script>
