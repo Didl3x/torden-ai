@@ -142,6 +142,7 @@ a:not([class]):focus-visible { border-radius: 4px; }
   position: relative;
   min-height: 100vh;
   min-height: 100svh;
+  padding-top: 96px; /* clear the fixed nav when content exceeds viewport height */
   display: flex;
   align-items: flex-end;
   isolation: isolate;
@@ -222,7 +223,7 @@ a:not([class]):focus-visible { border-radius: 4px; }
   color: var(--text-2);
   padding: 14px 4px;
 }
-.arrow-link::after { content: " \2192"; }
+.arrow-link::after { content: " ->"; } /* ASCII: U+2192 is not in the shipped mono subset */
 .arrow-link:hover { color: #ffffff; }
 .hero-note {
   position: absolute;
@@ -317,7 +318,7 @@ a:not([class]):focus-visible { border-radius: 4px; }
   padding-top: 12px;
   font-family: var(--font-mono);
   font-size: 0.65rem;
-  letter-spacing: 0.16em;
+  letter-spacing: 0.18em;
   text-transform: uppercase;
   color: var(--muted-2);
 }
@@ -354,7 +355,7 @@ a:not([class]):focus-visible { border-radius: 4px; }
   flex-wrap: wrap;
   font-family: var(--font-mono);
   font-size: 0.68rem;
-  letter-spacing: 0.16em;
+  letter-spacing: 0.18em;
   text-transform: uppercase;
   color: var(--muted-2);
 }
@@ -365,7 +366,7 @@ a:not([class]):focus-visible { border-radius: 4px; }
             mask-image: linear-gradient(to right, #000 calc(100% - 28px), transparent);
   }
   .diagram-caption::after {
-    content: "Scroll \2192";
+    content: "Scroll ->";
     color: var(--muted-2);
   }
 }
@@ -442,8 +443,8 @@ a:not([class]):focus-visible { border-radius: 4px; }
 .launch-card figcaption {
   position: absolute;
   inset: auto 0 0 0;
-  padding: 18px 20px;
-  background: linear-gradient(to top, rgba(7, 8, 11, 0.85), rgba(7, 8, 11, 0));
+  padding: 28px 20px 18px;
+  background: linear-gradient(to top, rgba(7, 8, 11, 0.94) 0%, rgba(7, 8, 11, 0.78) 55%, rgba(7, 8, 11, 0) 100%);
   display: flex;
   justify-content: space-between;
   align-items: baseline;
@@ -458,7 +459,7 @@ a:not([class]):focus-visible { border-radius: 4px; }
 .launch-tag {
   font-family: var(--font-mono);
   font-size: 0.62rem;
-  letter-spacing: 0.16em;
+  letter-spacing: 0.18em;
   text-transform: uppercase;
   color: var(--muted);
   white-space: nowrap;
@@ -654,7 +655,7 @@ footer {
 .footer-meta {
   font-family: var(--font-mono);
   font-size: 0.65rem;
-  letter-spacing: 0.16em;
+  letter-spacing: 0.18em;
   text-transform: uppercase;
   color: var(--muted-2);
 }
@@ -675,4 +676,8 @@ footer {
   html { scroll-behavior: auto; }
   .js .reveal { opacity: 1; transform: none; transition: none; }
   * { animation: none !important; }
+}
+
+@media print {
+  .js .reveal { opacity: 1 !important; transform: none !important; transition: none !important; }
 }
