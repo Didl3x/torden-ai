@@ -105,6 +105,13 @@
             </figcaption>
           </figure>
         </div>
+        <figure class="cfd-band reveal">
+          <video src="assets/video/fuelflow.mp4" poster="assets/video/fuelflow-poster.jpg" muted loop playsinline preload="metadata" aria-label="Particle flow simulation through the Fossekall thrust chamber"></video>
+          <figcaption>
+            <span class="launch-name">Fossekall thrust chamber</span>
+            <span class="launch-tag">Fuel-flow simulation</span>
+          </figcaption>
+        </figure>
       </div>
     </section>
 
@@ -171,7 +178,7 @@
         revealEls.forEach(function (el) { el.classList.add("in"); });
       }
 
-      var videos = document.querySelectorAll(".launch-card video");
+      var videos = document.querySelectorAll(".launch-card video, .cfd-band video");
       if (reduced) {
         videos.forEach(function (v) {
           v.removeAttribute("autoplay");

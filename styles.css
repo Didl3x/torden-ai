@@ -440,7 +440,24 @@ a:not([class]):focus-visible { border-radius: 4px; }
   height: 100%;
   object-fit: cover;
 }
-.launch-card figcaption {
+.cfd-band {
+  position: relative;
+  margin-top: 18px;
+  border-radius: var(--radius);
+  overflow: hidden;
+  border: 1px solid var(--line);
+  background: #000;
+  aspect-ratio: 16 / 9;
+}
+.cfd-band video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.launch-card figcaption,
+.cfd-band figcaption {
   position: absolute;
   inset: auto 0 0 0;
   padding: 28px 20px 18px;
@@ -470,6 +487,7 @@ a:not([class]):focus-visible { border-radius: 4px; }
 }
 @supports not (aspect-ratio: 1 / 1) {
   .launch-card { min-height: 300px; }
+  .cfd-band { min-height: 360px; }
 }
 
 /* ---------- Defensibility band ---------- */
